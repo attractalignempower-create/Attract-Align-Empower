@@ -1,0 +1,9 @@
+{
+  "name": "attract-align-empower",
+  "version": "1.0.0",
+  "private": true,
+  "description": "My Journey",
+  "scripts": {
+    "start": "echo \"No start script defined\""
+  }
+}
