@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://attractalignempower-create.github.io/Attract-Align-Empower/sitemap.xml
+Sitemap: https://attractalignempower.com/sitemap.xml
