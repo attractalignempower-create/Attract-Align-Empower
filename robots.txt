@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /*.xml$
+
+Sitemap: https://attractalignempower.com/sitemap.xml
