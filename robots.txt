@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /*.json$
-Disallow: /*.xml$
 
-Sitemap: https://attractalignempower.com/sitemap.xml
+Sitemap: https://attractalignempower-create.github.io/Attract-Align-Empower/sitemap.xml
