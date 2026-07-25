@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with Attract · Align · Empower. Book your free 30-minute discovery call or send a message — let's start your transformation journey." />
+  <title>Contact | Attract · Align · Empower</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        Attract <span>&middot;</span> Align <span>&middot;</span> Empower
+      </a>
+      <button class="navbar-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Work With Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== Page Hero ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Let's Connect</h1>
+      <p>Whether you're ready to begin or just exploring, I'd love to hear from you. Reach out and let's start the conversation.</p>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2 class="reveal">I'm Here for You</h2>
+          <p class="reveal">
+            Reaching out takes courage — and I want you to know that every message is read personally.
+            Whether you have questions, want to book a discovery call, or just want to say hello, I'll be back to you within 24 hours on business days.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-detail-item reveal">
+              <div class="detail-icon">📧</div>
+              <div>
+                <h4>Email</h4>
+                <!-- Update this email address before going live -->
+                <p>hello@attractalignempower.com</p>
+              </div>
+            </div>
+            <div class="contact-detail-item reveal">
+              <div class="detail-icon">📅</div>
+              <div>
+                <h4>Discovery Call</h4>
+                <p>Fill in the form and I'll send you a booking link within 24 hours.</p>
+              </div>
+            </div>
+            <div class="contact-detail-item reveal">
+              <div class="detail-icon">🕐</div>
+              <div>
+                <h4>Response Time</h4>
+                <p>Within 24 hours on business days (Mon–Fri).</p>
+              </div>
+            </div>
+            <div class="contact-detail-item reveal">
+              <div class="detail-icon">🌍</div>
+              <div>
+                <h4>Location</h4>
+                <p>Online — available worldwide via video call.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <h4 style="font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-muted); margin-bottom: 0.75rem;">Follow Along</h4>
+            <div class="social-links" style="gap: 0.6rem;">
+              <a href="#" class="social-link" aria-label="Facebook" style="background: var(--color-light); color: var(--color-primary);">f</a>
+              <a href="#" class="social-link" aria-label="Instagram" style="background: var(--color-light); color: var(--color-primary);">in</a>
+              <a href="#" class="social-link" aria-label="LinkedIn" style="background: var(--color-light); color: var(--color-primary);">li</a>
+              <a href="#" class="social-link" aria-label="YouTube" style="background: var(--color-light); color: var(--color-primary);">▶</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper reveal">
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-primary); margin-bottom: 0.4rem;">Send a Message</h3>
+          <p style="color: var(--color-muted); font-size: 0.9rem; margin-bottom: 1.8rem;">Fill in the form below and I'll be in touch soon. ✨</p>
+
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first_name" placeholder="Jane" required />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last_name" placeholder="Smith" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="interest">I'm interested in…</label>
+              <select id="interest" name="interest">
+                <option value="">Please select an option</option>
+                <option value="discovery">Free 30-min Discovery Call</option>
+                <option value="coaching">1:1 Coaching Package</option>
+                <option value="intensive">Healing Intensive</option>
+                <option value="group">Group Program</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message *</label>
+              <textarea id="message" name="message" placeholder="Tell me a little about where you are right now and what you're hoping for…" required></textarea>
+            </div>
+
+            <div class="form-group" style="display:flex; align-items:flex-start; gap:0.75rem;">
+              <input type="checkbox" id="consent" name="consent" style="width:auto; margin-top:3px; flex-shrink:0;" required />
+              <label for="consent" style="font-weight:400; font-size:0.85rem; color: var(--color-muted); cursor:pointer;">
+                I agree that my information will be used to respond to my enquiry. I understand this is not a therapy service. *
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+              Send Message ✉️
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Attract <span>&middot;</span> Align <span>&middot;</span> Empower</div>
+          <p class="footer-tagline">Helping women step into their power, reclaim their story, and live with purpose and joy.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">f</a>
+            <a href="#" class="social-link" aria-label="Instagram">in</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">li</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">1:1 Coaching</a></li>
+            <li><a href="services.html">Intensives</a></li>
+            <li><a href="services.html">Group Programs</a></li>
+            <li><a href="contact.html">Free Discovery Call</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="contact.html">Get in Touch</a></li>
+            <li><a href="contact.html">Book a Call</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Attract · Align · Empower. All rights reserved.</p>
+        <p>Built with ❤ and purpose.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
