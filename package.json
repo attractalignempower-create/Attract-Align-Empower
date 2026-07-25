@@ -1,0 +1,11 @@
+{
+  "name": "attract-align-empower",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static site for Attract Align Empower",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve .",
+    "test": "echo \"No tests specified\" && exit 0"
+  }
+}
