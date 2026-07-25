@@ -32,7 +32,8 @@ RewriteRule ^(.*)/$ /$1 [R=301,L]
   # Referrer policy
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   # Content Security Policy (adjust if you add third-party embeds)
-  Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self';"
+  # 'unsafe-inline' is required for style attributes used in the HTML pages
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self';"
   # HSTS — enable only AFTER SSL is confirmed working (start with a short max-age)
   # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 </IfModule>

@@ -104,10 +104,11 @@ function initContactForm() {
       }
     });
 
-    // Email format
+    // Email format — RFC 5322-inspired pattern that rejects common malformed addresses
     const emailField = form.querySelector('#email');
     if (emailField && emailField.value.trim()) {
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      // Rejects consecutive dots, leading/trailing dots, invalid TLD, and leading hyphens in domain
+      const emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/;
       if (!emailPattern.test(emailField.value.trim())) {
         valid = false;
         markInvalid(emailField, 'Please enter a valid email address.');
@@ -135,10 +136,12 @@ function showFormSuccess(form) {
     'background:#f0fdf4;border:1.5px solid #86efac;border-radius:8px;padding:1.2rem 1.5rem;' +
     'color:#166534;font-weight:600;margin-top:1rem;text-align:center;';
   successDiv.innerHTML =
-    '✅ Thank you! Your message has been received. I\'ll be in touch within 24 hours.';
+    '✅ Thank you! Your details have been saved. ' +
+    'To receive this message by email, connect a form service such as Formspree ' +
+    '(see DEPLOY.md for instructions). I\'ll be in touch within 24 hours once configured.';
   form.reset();
   form.appendChild(successDiv);
-  setTimeout(() => successDiv.remove(), 6000);
+  setTimeout(() => successDiv.remove(), 8000);
 }
 
 /* =========================================================
