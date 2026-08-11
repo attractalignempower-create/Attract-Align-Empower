@@ -184,45 +184,68 @@
     .aae-nav .nav-toggle { display: flex; }
   }
 
-  @media (max-width: 600px) {
-    /* Nav — bigger logo and hamburger */
-    .aae-nav .nav-inner { padding: 14px 20px; }
-    .aae-nav .nav-logo img { width: 42px; height: 42px; }
-    .aae-nav .nav-logo span { font-size: 22px; }
-    .aae-nav .nav-toggle { padding: 8px; gap: 6px; }
-    .aae-nav .nav-toggle span { width: 28px; height: 2px; }
-    .aae-nav .nav-mobile-panel { padding: 28px 24px 32px; gap: 24px; }
-    .aae-nav .nav-mobile-panel a { font-size: 17px; letter-spacing: 0.08em; }
+  @media (max-width: 768px) {
+    /* Nav — bold and prominent */
+    .aae-nav .nav-inner { padding: 18px 24px; }
+    .aae-nav .nav-logo img { width: 52px; height: 52px; }
+    .aae-nav .nav-logo span { font-size: 26px; letter-spacing: 0.04em; }
+    .aae-nav .nav-logo { gap: 14px; }
+    .aae-nav .nav-toggle { padding: 10px; gap: 7px; }
+    .aae-nav .nav-toggle span { width: 34px; height: 2.5px; }
 
-    /* General body text */
-    .aae-root { font-size: 17px; }
-    .aae-root p { font-size: 16px; line-height: 1.75; }
-    .eyebrow { font-size: 13px; }
+    /* Mobile menu panel */
+    .aae-nav .nav-mobile-panel { padding: 32px 28px 40px; gap: 28px; }
+    .aae-nav .nav-mobile-panel a { font-size: 20px; letter-spacing: 0.1em; }
+
+    /* Global text */
+    .aae-root { font-size: 18px; }
+    .aae-root p { font-size: 17px; line-height: 1.8; }
+    .eyebrow { font-size: 13px; letter-spacing: 0.2em; }
+    .wrap { padding: 0 24px; }
 
     /* Hero */
-    .aae-hero h1 { font-size: 34px; }
-    .aae-hero .hero-sub { font-size: 16px; }
-    .btn-solid, .btn-outline { padding: 16px 28px; font-size: 13px; }
+    .aae-hero { padding: 110px 0 56px; }
+    .aae-hero h1 { font-size: 38px; line-height: 1.1; }
+    .aae-hero .hero-sub { font-size: 17px; }
+    .aae-hero .hero-actions { gap: 14px; }
+    .btn-solid, .btn-outline { padding: 18px 32px; font-size: 13.5px; width: 100%; text-align: center; display: block; }
 
-    /* Sections */
-    .section-head h2 { font-size: 32px; }
+    /* Section headings */
     .aae-section { padding: 72px 0; }
-    .wrap { padding: 0 20px; }
+    .section-head h2 { font-size: 34px; }
+    h2 { font-size: 32px !important; }
+    h3 { font-size: 26px !important; }
 
     /* Founder */
-    .founder-copy p { font-size: 16px; }
-    .founder-copy p.lede { font-size: 21px; }
+    .founder-copy p.lede { font-size: 22px; line-height: 1.45; }
+    .founder-copy p { font-size: 17px; }
+    .founder-grid .founder-name .serif { font-size: 24px; }
 
     /* Pillars */
-    .pillar-card { padding: 36px 28px 32px; }
-    .pillar-card h3 { font-size: 26px; }
+    .pillar-card { padding: 40px 30px 36px; }
+    .pillar-card h3 { font-size: 30px; }
+    .pillar-card .pillar-desc { font-size: 20px; }
 
     /* Journal */
-    .journal-copy .feature-item p { font-size: 15px; }
+    .journal-copy .feature-item p { font-size: 16px; }
 
-    /* Become section */
-    .become-section h2 { font-size: 30px; }
-    .become-section p.lede { font-size: 16px; }
+    /* Become / email */
+    .become-section h2 { font-size: 32px !important; }
+    .become-section p.lede { font-size: 17px; }
+    .signup-form { flex-direction: column; border: none; gap: 10px; }
+    .signup-form input[type="email"] { border: 1px solid rgba(250,247,242,0.55); font-size: 16px; padding: 18px; }
+    .signup-form button { padding: 18px; font-size: 13px; }
+
+    /* Shop cards */
+    .shop-card .card-title { font-size: 24px; }
+    .shop-card .card-desc { font-size: 15px; }
+    .card-cta { padding: 14px 24px; font-size: 13px; }
+
+    /* Footer */
+    .footer-brand .footer-logo span { font-size: 22px; }
+    .footer-brand .footer-logo img { width: 46px; height: 46px; }
+    .footer-col a, .footer-col span { font-size: 16px; }
+    .footer-bottom { font-size: 13px; }
   }
 
   /* ---------- Hero ---------- */
