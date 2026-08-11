@@ -16,9 +16,10 @@
     --charcoal-soft: #3a3936;
     font-family: 'Jost', sans-serif;
     font-weight: 300;
+    font-size: 20px;
     color: var(--charcoal);
     background: var(--ivory);
-    line-height: 1.6;
+    line-height: 1.85;
     overflow-x: hidden;
     position: relative;
   }
@@ -33,7 +34,7 @@
     font-weight: 400;
     letter-spacing: 0.22em;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 13.5px;
     color: var(--gold);
   }
   .aae-root .eyebrow.on-dark { color: var(--gold-soft); }
@@ -110,7 +111,7 @@
   .aae-nav .nav-logo img { width: 34px; height: 34px; }
   .aae-nav .nav-logo span {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 0.06em;
     color: var(--charcoal);
   }
@@ -118,7 +119,7 @@
   .aae-nav .nav-links {
     display: flex;
     gap: 32px;
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
   }
@@ -186,67 +187,89 @@
   }
 
   @media (max-width: 768px) {
-    /* Nav — bold and prominent */
+    /* Nav */
     .aae-nav .nav-inner { padding: 18px 24px; }
     .aae-nav .nav-logo img { width: 52px; height: 52px; }
     .aae-nav .nav-logo span { font-size: 26px; letter-spacing: 0.04em; }
     .aae-nav .nav-logo { gap: 14px; }
     .aae-nav .nav-toggle { padding: 10px; gap: 7px; }
     .aae-nav .nav-toggle span { width: 34px; height: 2.5px; }
-
-    /* Mobile menu panel */
     .aae-nav .nav-mobile-panel { padding: 32px 28px 40px; gap: 28px; }
-    .aae-nav .nav-mobile-panel a { font-size: 20px; letter-spacing: 0.1em; }
+    .aae-nav .nav-mobile-panel a { font-size: 22px; letter-spacing: 0.1em; }
 
-    /* Global text */
-    .aae-root { font-size: 18px; }
-    .aae-root p { font-size: 17px; line-height: 1.8; }
-    .eyebrow { font-size: 13px; letter-spacing: 0.2em; }
-    .wrap { padding: 0 24px; }
+    /* Global */
+    .aae-root { font-size: 19px; }
+    .aae-root p { font-size: 20px; line-height: 1.9; }
+    .eyebrow { font-size: 14px; letter-spacing: 0.22em; text-align: center; }
+    .gold-line { margin-left: auto; margin-right: auto; }
+    .wrap { padding: 0 28px; }
+
+    /* All text centred on mobile */
+    .aae-section .wrap { text-align: center; }
+    .section-head { text-align: center; max-width: 100%; }
+    .founder-copy { text-align: center; }
+    .founder-copy .signature { text-align: center; }
+    .journal-copy { text-align: center; }
+    .journal-copy .feature-item { flex-direction: column; align-items: center; gap: 8px; }
+    .journal-copy .feature-item .dot { display: none; }
 
     /* Hero */
-    .aae-hero { padding: 110px 0 56px; }
-    .aae-hero h1 { font-size: 38px; line-height: 1.1; }
-    .aae-hero .hero-sub { font-size: 17px; }
-    .aae-hero .hero-actions { gap: 14px; }
-    .btn-solid, .btn-outline { padding: 18px 32px; font-size: 13.5px; width: 100%; text-align: center; display: block; }
+    .aae-hero { padding: 110px 0 60px; }
+    .aae-hero .hero-grid { grid-template-columns: 1fr; text-align: center; }
+    .aae-hero h1 { font-size: 34px; line-height: 1.15; }
+    .aae-hero .hero-sub { font-size: 18px; margin: 0 auto; }
+    .aae-hero .hero-actions { flex-direction: column; align-items: center; gap: 14px; }
+    .aae-hero .hero-image-wrap { max-width: 320px; margin: 0 auto; }
+    .btn-solid, .btn-outline { padding: 18px 32px; font-size: 14px; width: 100%; text-align: center; display: block; }
 
-    /* Section headings */
-    .aae-section { padding: 72px 0; }
-    .section-head h2 { font-size: 34px; }
-    h2 { font-size: 32px !important; }
-    h3 { font-size: 26px !important; }
+    /* Sections */
+    .aae-section { padding: 80px 0; }
+    h1 { font-size: 36px !important; line-height: 1.15 !important; }
+    h2 { font-size: 36px !important; line-height: 1.15 !important; }
+    h3 { font-size: 28px !important; }
 
-    /* Founder */
-    .founder-copy p.lede { font-size: 22px; line-height: 1.45; }
-    .founder-copy p { font-size: 17px; }
-    .founder-grid .founder-name .serif { font-size: 24px; }
+    /* Founder grid — stack vertically, centred */
+    .founder-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+    .founder-grid .founder-portrait { max-width: 280px; margin: 0 auto; }
+    .founder-copy p.lede { font-size: 24px; line-height: 1.45; }
+    .founder-copy p { font-size: 20px; }
 
     /* Pillars */
-    .pillar-card { padding: 40px 30px 36px; }
-    .pillar-card h3 { font-size: 30px; }
-    .pillar-card .pillar-desc { font-size: 20px; }
+    .pillars-grid { grid-template-columns: 1fr; }
+    .pillar-card { padding: 44px 32px 40px; text-align: center; }
+    .pillar-card h3 { font-size: 34px; }
+    .pillar-card .pillar-desc { font-size: 22px; }
+    .pillar-card .pillar-themes { justify-content: center; }
+    .pillar-card .pillar-themes span { text-align: center; }
 
     /* Journal */
-    .journal-copy .feature-item p { font-size: 16px; }
+    .journal-grid { grid-template-columns: 1fr; }
+    .journal-grid .journal-image { max-width: 320px; margin: 0 auto; }
+    .journal-copy .feature-item p { font-size: 17px; }
 
     /* Become / email */
-    .become-section h2 { font-size: 32px !important; }
-    .become-section p.lede { font-size: 17px; }
+    .become-section h2 { font-size: 34px !important; }
+    .become-section p.lede { font-size: 20px; }
     .signup-form { flex-direction: column; border: none; gap: 10px; }
-    .signup-form input[type="email"] { border: 1px solid rgba(250,247,242,0.55); font-size: 16px; padding: 18px; }
-    .signup-form button { padding: 18px; font-size: 13px; }
+    .signup-form input[type="email"] { border: 1px solid rgba(250,247,242,0.55); font-size: 17px; padding: 18px; text-align: center; }
+    .signup-form button { padding: 18px; font-size: 14px; }
 
-    /* Shop cards */
-    .shop-card .card-title { font-size: 24px; }
-    .shop-card .card-desc { font-size: 15px; }
-    .card-cta { padding: 14px 24px; font-size: 13px; }
+    /* Shop */
+    .shop-grid { grid-template-columns: 1fr; }
+    .shop-card .card-title { font-size: 26px; }
+    .shop-card .card-desc { font-size: 18px; line-height: 1.8; }
+    .shop-card .card-body { text-align: center; align-items: center; }
+    .card-cta { padding: 16px 28px; font-size: 13.5px; width: 100%; text-align: center; }
 
     /* Footer */
+    .footer-top { flex-direction: column; align-items: center; text-align: center; }
+    .footer-brand .footer-logo { justify-content: center; }
     .footer-brand .footer-logo span { font-size: 22px; }
     .footer-brand .footer-logo img { width: 46px; height: 46px; }
-    .footer-col a, .footer-col span { font-size: 16px; }
-    .footer-bottom { font-size: 13px; }
+    .footer-links { justify-content: center; gap: 32px; }
+    .footer-col { text-align: center; }
+    .footer-col a, .footer-col span { font-size: 17px; }
+    .footer-bottom { text-align: center; font-size: 13px; flex-direction: column; gap: 6px; }
   }
 
   /* ---------- Hero ---------- */
@@ -264,7 +287,7 @@
   }
   .aae-hero .hero-copy .gold-line { margin-top: 22px; margin-bottom: 26px; }
   .aae-hero h1 {
-    font-size: 52px;
+    font-size: 58px;
     line-height: 1.08;
     color: var(--charcoal);
   }
@@ -274,9 +297,9 @@
   }
   .aae-hero .hero-sub {
     margin-top: 22px;
-    font-size: 17px;
+    font-size: 21px;
     color: #58564f;
-    max-width: 460px;
+    max-width: 480px;
     font-weight: 300;
   }
   .aae-hero .hero-actions {
@@ -405,7 +428,7 @@
   .founder-copy p.lede {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
-    font-size: 23px;
+    font-size: 29px;
     color: var(--charcoal);
     line-height: 1.45;
     margin-bottom: 28px;
@@ -465,7 +488,7 @@
     gap: 10px 0;
   }
   .pillar-card .pillar-themes span {
-    font-size: 11.5px;
+    font-size: 13px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--gold-soft);
@@ -513,7 +536,7 @@
   }
   .journal-copy .feature-item p {
     margin: 0;
-    font-size: 15.5px;
+    font-size: 18px;
     color: #4a4944;
   }
   .journal-copy .feature-item p b { color: var(--charcoal); font-weight: 500; }
@@ -662,7 +685,7 @@
   .footer-brand .footer-logo span b { color: var(--gold); font-weight: 600; }
   .footer-brand p {
     margin-top: 16px;
-    font-size: 13.5px;
+    font-size: 16px;
     color: rgba(250,247,242,0.6);
     font-weight: 300;
   }
